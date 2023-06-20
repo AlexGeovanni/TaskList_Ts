@@ -1,0 +1,47 @@
+
+.item{
+    width: 100%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+.done{
+    border-color:rgba(255, 255, 255,.6) ;
+    .description__item{
+        text-decoration-line: line-through; 
+        opacity: .7;
+    }
+}
+
+.description__item{
+    font-size: 20px;
+    line-height: 17px;
+    font-weight: 300;
+    
+}
+
+.action__item{
+    display: flex;
+    gap: 10px;
+
+    .check__action{
+        border: none;
+        cursor: pointer;
+    }
+
+    .delete__action{
+        cursor: pointer;
+        padding: 4px 8px;
+        transition: all .3s ease-in-out;
+        &:hover{
+            padding: 4px 8px;
+            background-color: rgb(204, 57, 57);
+        }
+    }
+}
+
