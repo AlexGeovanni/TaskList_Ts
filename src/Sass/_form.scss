@@ -2,6 +2,10 @@
     width: 100%;
     display: flex;
     gap: 6px;
+    @media screen and (max-width:768px) {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }
 
 .input__form{
@@ -11,6 +15,10 @@
     border: 0;
     outline: none;
     border-radius: 5px;
+    @media screen and (max-width:768px) {
+        font-size: 14px;
+        padding: 12px 14px;
+    }
 }
 
 .btnAgregar__form{
@@ -27,5 +35,10 @@
 
     &:hover{
         border-color: #ffffffad;
+    }
+    @media screen and (max-width:768px) {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 16px;
     }
 }

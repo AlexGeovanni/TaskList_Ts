@@ -2,7 +2,14 @@
     max-width: 550px;
     width: 100%;
     padding: 1rem;
+    @media screen and (max-width:768px) {
+        padding: .6rem;
+        .title__app{
+            font-size: 28px;
+        }
+    }
 }
+
 .title__app{
     font-size: 32px;
     text-align: center;
@@ -16,6 +23,7 @@
 .taskList__app{
     max-height:250px;
     overflow-x: hidden;
+    
     /*Webkit*/
     &::-webkit-scrollbar {
         width: 4px;
